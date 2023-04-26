@@ -22,7 +22,7 @@ public class Data {
             }
         }
         if (isNormal){
-            return (String) yamlManager.get(id,"adapt.normal","&r");
+            return (String) yamlManager.get(id,"adapt.normal","§r");
         }else {
             return result;
         }

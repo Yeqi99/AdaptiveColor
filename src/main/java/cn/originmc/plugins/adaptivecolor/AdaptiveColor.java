@@ -31,10 +31,11 @@ public final class AdaptiveColor extends JavaPlugin {
         if(Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             new Papi().register();
         }
+        getSender().sendOnEnableMsgToLogger("AdaptiveColor","Yeqi","1.0.0","Public");
     }
 
     @Override
     public void onDisable() {
-
+        getSender().sendOnDisableMsgToLogger("AdaptiveColor","Yeqi","1.0.0","Public");
     }
 }

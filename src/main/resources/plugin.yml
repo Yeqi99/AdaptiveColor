@@ -5,6 +5,7 @@ api-version: 1.13
 authors: [ Yeqi ]
 depend:
   - PlaceholderAPI
+  - OriginCore
 commands:
   AdaptiveColor:
     aliases:

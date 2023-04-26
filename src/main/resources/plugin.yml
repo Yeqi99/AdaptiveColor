@@ -1,0 +1,11 @@
+name: AdaptiveColor
+version: '${project.version}'
+main: cn.originmc.plugins.adaptivecolor.AdaptiveColor
+api-version: 1.13
+authors: [ Yeqi ]
+depend:
+  - PlaceholderAPI
+commands:
+  AdaptiveColor:
+    aliases:
+      - ac

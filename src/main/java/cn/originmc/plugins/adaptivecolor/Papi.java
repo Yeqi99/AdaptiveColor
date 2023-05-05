@@ -2,7 +2,6 @@ package cn.originmc.plugins.adaptivecolor;
 
 import cn.originmc.plugins.origincore.hook.PlaceholderAPIHook;
 import cn.originmc.plugins.origincore.util.text.FormatText;
-import me.clip.placeholderapi.PlaceholderAPI;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.OfflinePlayer;
 import org.jetbrains.annotations.NotNull;
@@ -25,6 +24,8 @@ public class Papi extends PlaceholderExpansion {
     }
     @Override
     public @Nullable String onRequest(OfflinePlayer player, @NotNull String params) {
+        params= params.replace(">","^");
+        params= params.replace("#","`");
         FormatText formatText=new FormatText(params);
         String v=formatText.getValue("value");
         double value;
